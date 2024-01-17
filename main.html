@@ -3,52 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Job Application Form </title>
+    <title></title>
 </head>
 <body>
+    <form method="post">
+		<label for="name">Name</label>
+		<input id="name" type="text" required>
+		<br>
 
-	
-<h2>Job Application Form</h2>
+		<label for="email">Email</label>
+		<input id="email" type="email" required>
+		<br>
+		
+        <label>Select Gender:</label>
+		<label for="gender-m">Male</label>
+		<input  name ="gender" id="gender-m" type="radio" required>
+        <label for="gender-f">Femail</label>
+		<input name="gender" id="gender-f" type="radio" required>
+        <br>
+		
+		<label for="laptop"> Choose Laptop Brands:</label>
+		<select id="laptop">
+			<option>Apple</option>
+			<option>Asus</option>
+			<option>HP</option>
+		</select>
+		<br>
+		
+		<label for="age">Age</label>
+		<input id="age" type="number" required>
+		<br>
 
-<form action="/submit-application" method="post">
+		<label for="dob">Date Of Birth</label>
+		<input id="dob" type="date" required>
+		<br>
 
-  <label for="name">Name*:</label>
-  <input type="text" id="name" name="name" required><br><br>
+        <label for="password">Password</label>
+		<input id="password" type="password" required>
+        <br>
+		
+		<lable for="portfolio">Portfolio</lable>
+		<input id="portfolio" type="url">
+        <br>
+		
+		<button type="submit">Submit</button>
 
-  <label for="email">Email*:</label>
-  <input type="email" id="email" name="email" required><br><br>
+		
 
-  <label>Gender*:</label><br>
-  <input type="radio" id="male" name="gender" required>
-  <label for="male">Male</label>
-  <input type="radio" id="female" name="gender" required>
-  <label for="female">Female</label><br><br>
+		
+		
 
-  <label for="laptop">Laptop Brands:</label>
-  <select id="laptop" name="laptop">
-    <option value="Apple">Apple</option>
-    <option value="Asus">Asus</option>
-    <option value="HP">HP</option>
-  </select><br><br>
-
-  <label for="age">Age*:</label>
-  <input type="number" id="age" name="age" required><br><br>
-
-  <label for="dob">Date of Birth*:</label>
-  <input type="date" id="dob" name="dob" required><br><br>
-
-  <label for="password">Password*:</label>
-  <input type="password" id="password" name="password" required><br><br>
-
-  <label for="portfolio">Portfolio URL:</label>
-  <input type="url" id="portfolio" name="portfolio"><br><br>
-
-  <input type="submit" value="Submit">
-
-</form>
-
+		<label for="gender-f"></label>
+	</form>
 </body>
-</html>
-</body>
-
 </html>
